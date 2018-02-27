@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ch.hevs.aoa.jersey</groupId>
+  <artifactId>AOAServer</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+	    <dependencies>
+	        <dependency>
+	            <groupId>com.sun.jersey</groupId>
+	            <artifactId>jersey-server</artifactId>
+	            <version>1.19</version>
+	        </dependency>
+	        <dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-servlet</artifactId>
+				<version>1.19</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-client</artifactId>
+				<version>1.19</version>
+			</dependency>
+			
+  			<!-- OntoFuse dependencies that can be handled by Maven -->
+		  	<dependency>
+		  		<groupId>ch.qos.logback</groupId>
+		  		<artifactId>logback-classic</artifactId>
+		  		<version>1.1.2</version>
+		  	</dependency>
+        	<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.6</version>
+			</dependency>
+	    	<dependency>
+				<groupId>org.eclipse.rdf4j</groupId>
+				<artifactId>rdf4j-runtime</artifactId>
+				 <version>2.2</version>
+		    </dependency>
+		    <dependency>
+			    <groupId>org.json</groupId>
+			    <artifactId>json</artifactId>
+			    <version>20160810</version>
+			</dependency>
+		    
+		    
+  			<!-- End of Ontofuse dependencies that can be handled by Maven -->	        
+	    </dependencies>  
+
+	    <build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>2.5.1</version>
+      <configuration>
+        <source>1.8</source>
+        <target>1.8</target>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+	    
+</project>
